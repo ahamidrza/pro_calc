@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: unset;
+    font-family: Roboto, sans-serif;
+    padding: unset;
+}
+
+calculator table {
+    user-select: none;
+    padding: 2px;
+    width: 174px;
+}
+
+button:disabled {
+    background-color: rgba(252, 252, 252) !important;
+    border: #f0f0f0 solid 1px !important;
+    color: #969696 !important;
+    filter: unset !important;
+    box-shadow: unset !important;
+}
+
+button:disabled b {
+    color: #707070 !important;
+}
+
+button {
+    transition: filter .1s, box-shadow .4s;
+}
+
+button:active {
+    filter: brightness(95%);
+    box-shadow: rgba(0, 0, 0, 0.1) inset 0 0 5px;
+}
+
+calculator button {
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
+}
+
+calculator input {
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    width: 162px;
+    margin: 2px;
+    height: 50px;
+    background-color: rgba(252, 252, 252);
+    border: #f0f0f0 solid 1px;
+    padding: 10px;
+    padding-left: 14px;
+}
+
+
+calculator input::placeholder {
+    color: #b4b4b4;
+}
+
+calculator button {
+    width: 50px;
+    color: #969696;
+    font-size: 13px;
+}
+
+calculator button b {
+    color: #707070;
+    font-size: 18px;
+}
+
+#history button {
+    margin-bottom: 4px;
+}
+
+#history button:last-child {
+    display: none;
+}
+
+calculator table tr:nth-child(6) td:first-child button:first-child {
+    background-color: #e95a25;
+    width: 106px;
+    color: #edc7b4;
+}
+
+calculator table tr:nth-child(6) td:first-child button:first-child b {
+    color: #f5e1d7;
+}
+
+calculator button {
+    height: 50px;
+}
+
+calculator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+calculator tr:last-child td:last-child {
+    position: relative;
+}
+
+calculator tr:first-child td:last-child div {
+    overflow: hidden;
+    height: 334px;
+}
+
+calculator tr:first-child td:last-child button {
+    text-align: left;
+    padding: 20px;
+    padding-top: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 600px) {
+    calculator tr:first-child td:last-child #history button {
+        width: calc(100vw - 236px) !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    calculator tr:first-child td:last-child {
+        display: none;
+    }
+}

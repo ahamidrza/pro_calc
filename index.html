@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>professional calculator by hamidreza ahmadi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="history()">
+<calculator>
+    <table>
+        <tr>
+            <td colspan="3"><input id="input" readonly placeholder="0000000000000"></td>
+            <td>
+                <button id="div" disabled onclick="d2();d1();d5();document.getElementById('input').value+='/'"><b>/</b>
+                    <p>div</p></button>
+            </td>
+            <td colspan="3" rowspan="9">
+                <div id="history"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='1'"><b>1</b>
+                    <p>one</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='2'"><b>2</b>
+                    <p>two</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='3'"><b>3</b>
+                    <p>three</p></button>
+            </td>
+            <td>
+                <button id="mul" disabled onclick="d2();d1();d5();document.getElementById('input').value+='*'"><b>*</b>
+                    <p>mul</p></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='4'"><b>4</b>
+                    <p>four</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='5'"><b>5</b>
+                    <p>five</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='6'"><b>6</b>
+                    <p>six</p></button>
+            </td>
+            <td>
+                <button id="fl" disabled
+                        onclick="d3();t=1;disabled=true;document.getElementById('input').value+='.'">
+                    <b>.</b>
+                    <p>float</p></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='7'"><b>7</b>
+                    <p>seven</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='8'"><b>8</b>
+                    <p>eight</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='9'"><b>9</b>
+                    <p>nine</p></button>
+            </td>
+            <td>
+                <button id="cl" disabled onclick="d3();document.getElementById('input').value=''"><b>cle</b>
+                    <p>clean</p></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <button id="sum" onclick="d2();d5();document.getElementById('input').value+='+'"><b>+</b>
+                    <p>sum</p></button>
+            </td>
+            <td colspan="1">
+                <button onclick="d2();document.getElementById('input').value+='0'"><b>0</b>
+                    <p>zero</p></button>
+            </td>
+            <td colspan="1">
+                <button id="sub" onclick="d2();d5();document.getElementById('input').value+='-'"><b>-</b>
+                    <p>sub</p></button>
+            </td>
+            <td>
+                <button disabled></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button id="rs" disabled
+                        onclick="d2();setCookie('history',document.getElementById('input').value+'UR'+getCookie('history'));document.getElementById('input').value=eval(document.getElementById('input').value);setCookie('history',document.getElementById('input').value+'='+getCookie('history'));history()">
+                    <b>=</b>
+                    <p>result</p>
+                </button>
+            </td>
+            <td colspan="1">
+                <button id="open" disabled onclick="d2();d6();document.getElementById('input').value+='('"><b>(</b>
+                </button>
+            </td>
+            <td colspan="1">
+                <button id="close" disabled onclick="d2();d7();document.getElementById('input').value+=')'"><b>)</b>
+                </button>
+            </td>
+        </tr>
+    </table>
+</calculator>
+</body>
+</html>
