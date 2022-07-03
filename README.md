@@ -1,8 +1,10 @@
-# professional calculator
-a really professional web based calculator coded with html , css , js by hamidreza ahmadi
-you can see preview of this script in this link :
-https://rawcdn.githack.com/ha8540268/professional_calculator/cf19f72eff90ed00af52fff8578fb9b47b80d759/index.html
-
-# ماشین حساب پیشرفته
-یک ماشین حساب حرفه ای بر پایه وب است که با زبان های جاوا اسکریپت سی اس اس و اچ تی ام ال توسط حمیدرضا احمدی نوشته شده شما میتوانید پیش نمایش این اسکریپت را در لینک زیر ببینید : 
-https://rawcdn.githack.com/ha8540268/professional_calculator/cf19f72eff90ed00af52fff8578fb9b47b80d759/index.html
+# pro_calc
+a professional calc with good ui
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/108602676/177025761-317d4328-4fc7-4ab1-b5cb-1116ee560bb1.png)
+<br>
+<br>
+a simple - pro - good calc
+<br>
+a project by hamidreza ahmadi
